@@ -1,7 +1,7 @@
 //  প্রাকটিস চ্যালেঞ্জ -১:  
 
-var result = 80 ;
-if(result < 50){
+var result = -10 ;
+if(result < 50 && result >= 0 ){
     console.log('Your friend grade is F');
 }   else if ( result >= 50 && result < 60){
         console.log('Your friend grade is D');
@@ -15,7 +15,7 @@ if(result < 50){
     else if( result >= 80 && result < 90){
         console.log('Your friend grade is A');
     }
-    else if( result >= 90 && result <= 10){
+    else if( result >= 90 && result <= 100){
         console.log('Your friend grade is A+');
     }
 else{
