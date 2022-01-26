@@ -1,4 +1,5 @@
- 
+//  প্রাকটিস চ্যালেঞ্জ -১:  
+
 var result = 80 ;
 if(result < 50){
     console.log('Your friend grade is F');
