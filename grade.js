@@ -1,6 +1,6 @@
 //  প্রাকটিস চ্যালেঞ্জ -১:  
 
-var result = -10 ;
+var result = 95 ;
 if(result < 50 && result >= 0 ){
     console.log('Your friend grade is F');
 }   else if ( result >= 50 && result < 60){
@@ -22,3 +22,27 @@ else{
     console.log('Result not found ');
 }
 
+//  প্রাকটিস চ্যালেঞ্জ -2: 
+// var trafficDanger = 'Red';
+// var trafficMiddle = 'Yellow';
+// var trafficNormal = 'Green'; 
+// var trafficSignal = trafficNormal ;
+
+// if( trafficSignal == trafficDanger){
+//     console.log('If I go it will be danger');
+// } else if( trafficSignal == trafficMiddle){
+//     console.log('I have to wait ')
+// } else if(trafficSignal == trafficNormal){
+//     console.log('I have to cross the road .')
+// }else{
+//     console.log('Gumao giya');
+// }
+
+var signal = 'yellow' ; 
+if(signal === 'red'){
+    console.log('If I go it will be danger');
+} else if( signal === 'yellow'){
+    console.log('I have to wait ');
+} else {
+    console.log('Now I can go ') ;
+}
