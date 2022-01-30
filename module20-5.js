@@ -55,13 +55,46 @@ console.log(todayCelsius);
 
 function yourMark (mark){
     if(mark >= 80 && mark <=100){
-        let goodMark = 'Your result is A+';
-        return goodMark
+        return 'Your grade is A+ ';
     } 
+    else if(mark >= 70 && mark <=79){
+        return 'Your grade is A ';
+    } 
+    else if(mark >= 65 && mark <=69){
+        return 'Your grade is A- ';
+    } 
+    else if(mark >= 60 && mark <=64){
+        return 'Your grade is B ';
+    } 
+    else if(mark >= 50 && mark <=59){
+        return 'Your grade is C ';
+    } 
+    else if(mark >= 40 && mark <=49){
+        return 'Your grade is D ';
+    } 
+    else if(mark >= 34 && mark <=39){
+        return 'Your grade is E ';
+    } 
+    else if(mark >= 0 && mark <=33){
+        return 'Your grade is F ';
+    } 
+    else {
+        return 'Result not found ';
+    }
 }
-let mark = 81 ;
-let result = yourMark(mark);
-console.log(result);
+let mark = 33 ;
+let yourGrade = yourMark(mark) ;
+console.log(yourGrade);
 
 // ৪. সুদের হিসাব করবে। জাস্ট হিসাব কেমনে করতে হয়। সেই চিন্তায় করবে। সুদ ভালো না খারাপ সেটা এখন চিন্তা করার দরকার নাই। জাস্ট একটা ফর্মুলা থাকলে সেটা কিভাবে কোড এ লিখতে হয় সেই এঙ্গেল থেকে করার চেষ্টা করো। 
+
+function simpleInterest (principle,interest,time){
+    let myInterest = principle * interest * time ; 
+    return myInterest ;
+}
+let principle = 500 ;
+let interest = 5 ;
+let time = 2 ; 
+let totalIntest = simpleInterest(principle,interest,time); 
+console.log(totalIntest);
 
