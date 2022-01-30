@@ -33,8 +33,35 @@ console.log(result);
 // Module 20 -5 Challenge 
 // ১. তোমাকে ফাংশনের ইনপুট হিসেবে সেলসিয়াস দিবে। তুমি ক্যালকুলেশন করে তাপমাত্রা ফারেনহাইট এ কনভার্ট করে সেটার আউটপুট রিটার্ন করবে  
 
+function celsiusToFahrenheit (celsius){
+    let fahrenheit = (9 / 5 ) * celsius + 32 ;
+    return fahrenheit ;
+}
+let celsius = 22 ; 
+let todayFahrenheit = celsiusToFahrenheit(celsius)
+console.log(todayFahrenheit);
+
 // ২. একইভাবে উল্টা হিসাব করবে। যাতে তোমাকে ফারেনহাইট হিসেবে তাপমাত্রা দিলে সেটাকে সেলসিয়াস এ কনভার্ট করে আউটপুট দিবে। 
+
+function fahrenheitToCelsius (fahrenheit){
+    let celsius = (5 / 9) * (fahrenheit - 32 )
+    return celsius ;
+}
+let fahrenheit = 71.6 ;
+let todayCelsius = fahrenheitToCelsius(fahrenheit)
+console.log(todayCelsius);
 
 // ৩. কেউ ১০০ এর মধ্যে কত মার্ক্স্ পেয়েছে সেটা তোমাকে বলে দিবে। তুমি একটা ফাংশন দিয়ে বলে দিবে সে এ+ পাবে নাকি অন্য কোন গ্রেড পাবে। 
 
+function yourMark (mark){
+    if(mark >= 80 && mark <=100){
+        let goodMark = 'Your result is A+';
+        return goodMark
+    } 
+}
+let mark = 81 ;
+let result = yourMark(mark);
+console.log(result);
+
 // ৪. সুদের হিসাব করবে। জাস্ট হিসাব কেমনে করতে হয়। সেই চিন্তায় করবে। সুদ ভালো না খারাপ সেটা এখন চিন্তা করার দরকার নাই। জাস্ট একটা ফর্মুলা থাকলে সেটা কিভাবে কোড এ লিখতে হয় সেই এঙ্গেল থেকে করার চেষ্টা করো। 
+
