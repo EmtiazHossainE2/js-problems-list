@@ -58,13 +58,14 @@ const pizza = {
 এবং pepperoni প্রিন্ট করবা। */ 
 
 var pizza = {
-    toppings: ['cheese', 'sauce', 'pepperoni'],
+    toppings: ['cheese', 'sauce', 'pepperoni',],
     crust: 'deep dish',
     serves: 2
 }
-if(pizza.toppings.indexOf('pepperoni') != -1){
-    console.log('Pepperoni');
-}
-else {
-    console.log('Pepperoni is not here') ;
-}
+console.log(pizza.toppings[2]);
+// if(pizza.toppings.indexOf('pepperoni') != -1){
+//     console.log('Pepperoni');
+// }
+// else {
+//     console.log('Pepperoni is not here') ;
+// }
